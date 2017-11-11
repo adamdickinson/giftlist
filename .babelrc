@@ -1,0 +1,19 @@
+{
+	"sourceMaps": true,
+	"presets": [
+		"env"
+	],
+	"plugins": [
+    "transform-regenerator",
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true
+    }],
+    "transform-decorators-legacy",
+    "transform-object-rest-spread",
+		["transform-react-jsx", {
+      "pragma": "h"
+    }]
+	]
+}

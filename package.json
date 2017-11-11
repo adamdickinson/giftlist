@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "Giftlist",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build -p --no-prerender --service-worker --dest=build/public",
+    "serve": "preact build && preact serve",
+    "server": "webpack --config webpack.config.server.js && node build/server.js",
+    "dev": "preact watch",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "eslint": "^4.5.0",
+    "eslint-config-synacor": "^1.1.0",
+    "if-env": "^1.0.0",
+    "preact-cli": "^2.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.0",
+    "facebook-oauth-agent": "^1.0.3",
+    "history": "^4.7.2",
+    "pouchdb": "^6.3.4",
+    "pouchdb-upsert": "^2.2.0",
+    "preact": "^8.2.1",
+    "preact-compat": "^3.17.0",
+    "preact-icons": "^2.2.5",
+    "preact-redux": "^2.0.3",
+    "preact-router-redux": "^4.1.0",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
+  }
+}

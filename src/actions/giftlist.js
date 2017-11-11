@@ -1,0 +1,7 @@
+export const addItem             = item             => ({ type: "ADD_ITEM_TO_GIFTLIST", item })
+export const toggleClaim         = (item, by, giftlist) => ({ type: "TOGGLE_CLAIM_ITEM_IN_GIFTLIST", item, by, giftlist })
+export const loadOthersGiftlists = ()               => ({ type: "LOAD_OTHERS_GIFTLISTS" })
+export const loadGiftlist        = ()               => ({ type: "LOAD_GIFTLIST" })
+export const removeItem          = item             => ({ type: "REMOVE_ITEM_FROM_GIFTLIST", item })
+export const setGiftlist         = giftlist         => ({ type: "SET_GIFTLIST", giftlist })
+export const setGiftlists        = giftlists        => ({ type: "SET_GIFTLISTS", giftlists })
