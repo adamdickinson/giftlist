@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+
+
+body {
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #0091EA, #00BFA5);
+  min-height: 100vh;
+  font-family: "Roboto Slab";
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 8px;
+  padding: 8px 16px;
+}
+
+button[disabled] {
+  opacity: 0.5;
+}
+
+button:hover {
+  background: #fff;
+  color: #444;
+  transition: 0.1s all;
+  outline: none;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+input { 
+  font-family: inherit; 
+  outline: none;
+  font-size: inherit;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 0 24px;
+}
+
+header {
+  padding: 32px 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+
+.adder {
+  position: relative;
+}
+
+.adder-input {
+  padding: 16px 50px 16px 16px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: bold;
+  background: none;
+  width: 100%;
+  box-sizing: border-box;
+  user-select: none;
+}
+.adder-input::placeholder {
+  color: rgba(255, 255, 255, 0.65)
+}
+
+.adder-button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 42px;
+  height: 32px;
+  margin-top: -16px
+}
+
+.item {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  color: #444;
+  list-style: none;
+  margin: 8px 0;
+  padding: 8px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item.clickable {
+  cursor: pointer;
+}
+
+.item[disabled] {
+  opacity: 0.5;
+}
+
+.item button {
+  color: #444;
+}
+
+.item-label {
+  flex: 1 0;
+}
+
+.item-image {
+  border-radius: 3px;
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  background-color: #f0f0f0;
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.item-remove, .item-status {
+  background: none;
+  border-left: 1px solid #eee;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  outline: none;
+  padding: 0;
+  margin: -8px;
+}
+
+.item-remove:hover svg {
+  opacity: 1;
+}
+
+.item-remove svg {
+  opacity: 0.3;
+}
+
+.item-status {
+  border: none;
+  text-align: center;
+  line-height: 60px;
+}
+
+.giftlist-list {
+  padding: 0;
+  margin: 32px 0;
+}

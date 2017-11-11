@@ -1,0 +1,8 @@
+export const bootstrap         = ()   => ({ type: "BOOTSTRAP" }) 
+export const clearUser         = then => ({ type: "CLEAR_USER" })
+export const confirmLoggedIn   = then => ({ type: "CONFIRM_LOGGED_IN", then })
+export const loginUser         = user => ({ type: "LOGIN_USER", user }) 
+export const logOut            = ()   => ({ type: "LOGOUT" }) 
+export const loginWithFacebook = ()   => ({ type: "LOGIN_WITH_FACEBOOK" }) 
+export const ready             = ()   => ({ type: "READY" })
+export const setUser           = user => ({ type: "SET_USER", user })
